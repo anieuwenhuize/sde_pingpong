@@ -1,0 +1,36 @@
+[33mcommit 743cf2ec6089f74a49a4b7e1b21e521472a8065e[m[33m ([m[1;31morigin/solution[m[33m, [m[1;32msolution[m[33m)[m
+Author: Andries Nieuwenhuize <nieu0082@hz.nl>
+Date:   Thu Oct 24 11:04:54 2024 +0200
+
+    typo
+
+[1mdiff --git a/untitled/src/Main.java b/untitled/src/Main.java[m
+[1mindex 3e5c085..c0b4d95 100644[m
+[1m--- a/untitled/src/Main.java[m
+[1m+++ b/untitled/src/Main.java[m
+[36m@@ -15,7 +15,7 @@[m [mpublic class Main {[m
+             // Good luck![m
+             player2.setOpponent(player1);[m
+             player1.setOpponent(player2);[m
+[31m-            [m
+[32m+[m
+             player1.start(ball);[m
+ [m
+         }catch (StackOverflowError ex) {[m
+[1mdiff --git a/untitled/src/Player.java b/untitled/src/Player.java[m
+[1mindex 3431dfa..2c40179 100644[m
+[1m--- a/untitled/src/Player.java[m
+[1m+++ b/untitled/src/Player.java[m
+[36m@@ -17,10 +17,10 @@[m [mpublic class Player {[m
+     private void smash(PlasticBall40mm ball) {[m
+         Console.write(this.name + " plays: ");[m
+         ball.hit();[m
+[31m-        this.opponent.incomming(ball);[m
+[32m+[m[32m        this.opponent.incoming(ball);[m
+     }[m
+ [m
+[31m-    public void incomming(PlasticBall40mm ball) {[m
+[32m+[m[32m    public void incoming(PlasticBall40mm ball) {[m
+         this.smash(ball);[m
+     }[m
+ }[m
