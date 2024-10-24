@@ -17,10 +17,10 @@ public class Player {
     private void smash(PlasticBall40mm ball) {
         Console.write(this.name + " plays: ");
         ball.hit();
-        this.opponent.incomming(ball);
+        this.opponent.incoming(ball);
     }
 
-    public void incomming(PlasticBall40mm ball) {
+    public void incoming(PlasticBall40mm ball) {
         this.smash(ball);
     }
 }

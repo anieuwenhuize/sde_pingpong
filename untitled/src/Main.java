@@ -15,7 +15,7 @@ public class Main {
             // Good luck!
             player2.setOpponent(player1);
             player1.setOpponent(player2);
-            
+
             player1.start(ball);
 
         }catch (StackOverflowError ex) {
